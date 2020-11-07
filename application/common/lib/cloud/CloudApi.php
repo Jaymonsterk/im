@@ -9,7 +9,7 @@ namespace app\common\lib\cloud;
 
 class CloudApi
 {
-    const BASE_URL = 'https://auth.zjhejiang.com';
-    const SITE_INFO = '/cs/site/info';
+    const BASE_URL = 'http://kefu.szdcloud.com';
+    const SITE_INFO = '/api/Test/index';
     const SITE_UPDATE = '/cs/update/index';
 }

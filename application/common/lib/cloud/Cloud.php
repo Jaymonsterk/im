@@ -30,7 +30,6 @@ class Cloud
         $common = new Common();
         $host = $common->dianqilai_access_domain();
         $curl = new CurlUtils(CloudApi::BASE_URL.CloudApi::SITE_INFO);
-        $host = "dianqilai.zjhejiang.com";
         $domain = ["domain: $host"];
         $curl->addHeader($domain);
         $res = $curl->get();

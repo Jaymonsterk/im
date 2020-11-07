@@ -13,9 +13,9 @@ class Cloud
 {
     public function run(&$params)
     {
-        $info = \app\common\lib\cloud\Cloud::getHostInfo();
-        if (!$info) {
-            throw new HttpException(500,$info['msg']);
-        }
+//        $info = \app\common\lib\cloud\Cloud::getHostInfo();
+//        if (!$info) {
+//            throw new HttpException(500,$info['msg']);
+//        }
     }
 }
