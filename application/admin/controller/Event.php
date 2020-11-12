@@ -591,7 +591,7 @@ class Event extends Controller
 
             if ($visiter) {
                 // 替换成最新头像
-                $newvisiter = Admins::table('wolive_visiter')->where(['visiter_id' => $visiter_id, 'business_id' => $business_id])->update(['avatar' => $arr['avatar'],'login_times'=> ['exp','login_times+1']]);
+                $newvisiter = Admins::table('wolive_visiter')->where(['visiter_id' => $visiter_id, 'business_id' => $business_id])->update(['avatar' => $arr['avatar'],'login_times'=> Db::raw('login_times+1')]);
                 // 老用户
                 $service = Admins::table('wolive_queue')->where(['visiter_id' => $visiter_id, 'business_id' => $business_id])->find();
                 //最后服务id
